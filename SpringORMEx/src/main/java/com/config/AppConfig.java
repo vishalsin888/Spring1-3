@@ -47,7 +47,7 @@ public class AppConfig {
 		p.put("hibernate.dialect", env.getProperty("dial"));
 		p.put("hibernate.format_sql", env.getProperty("fs"));
 		p.put("hibernate.show_sql", env.getProperty("ss"));
-		p.put("hbm2ddl.auto", env.getProperty("hbm2ddl.auto"));
+		p.put("hibernate.hbm2ddl.auto", env.getProperty("hbm2ddl.auto"));
 		return p;
 	}
 	
