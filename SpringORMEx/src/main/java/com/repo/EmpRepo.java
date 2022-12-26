@@ -1,10 +1,12 @@
 package com.repo;
 
+import java.util.List;
+
 import com.model.Employee;
 
 public interface EmpRepo {
-	 void saveEmp(Employee emp);  // abstract method
-	 Employee updateEmp(Employee emp);
-	 Employee getEmp(Integer eId);
-	 Employee getAllEmp();
+	 void saveEmpRepo(Employee emp);  // abstract method
+	 void updateEmpRepo(Employee emp);
+	 Employee getEmpRepo(Integer eId);
+	 List<Employee> getAllEmpRepo();
 }

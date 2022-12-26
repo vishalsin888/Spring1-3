@@ -1,5 +1,7 @@
 package com.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,23 +15,21 @@ public class EmpServiceImpl implements EmpService{
 	@Autowired private EmpRepo empRepo;
 	
 	public void saveEmp(Employee emp) {  // service
-		// TODO Auto-generated method stub
-		this.empRepo.saveEmp(emp);  // repo will have emp object from service
+		this.empRepo.saveEmpRepo(emp);  // repo will have emp object from service
 	}
 
-	public Employee updateEmp(Employee emp) {
-		// TODO Auto-generated method stub
-		return null;
+	public void updateEmp(Employee emp) {
+		this.empRepo.updateEmpRepo(emp);
 	}
 
 	public Employee getEmp(Integer eId) {
 		// TODO Auto-generated method stub
-		return null;
+		return this.empRepo.getEmpRepo(eId);
 	}
 
-	public Employee getAllEmp() {
+	public List<Employee> getAllEmp() {
 		// TODO Auto-generated method stub
-		return null;
+		return this.empRepo.getAllEmpRepo();
 	}
 
 }

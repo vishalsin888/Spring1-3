@@ -1,5 +1,8 @@
 package com.repo.impl;
 
+
+import java.util.List;
+
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,23 +18,23 @@ public class EmpRepoImpl implements EmpRepo {
 	@Autowired private HibernateTemplate htemp;
 	
 	@Transactional
-	public void saveEmp(Employee emp) {  // insert -- save
+	public void saveEmpRepo(Employee emp) {  // insert -- save
 		 this.htemp.save(emp);
 	}
 
-	public Employee updateEmp(Employee emp) {
-		// TODO Auto-generated method stub
-		return null;
+	@Transactional
+	public void updateEmpRepo(Employee emp) {
+		this.htemp.update(emp);  //id extract update tablename set hff where id = emp.id
 	}
 
-	public Employee getEmp(Integer eId) {
+	public Employee getEmpRepo(Integer eId) {
 		// TODO Auto-generated method stub
-		return null;
+		return this.htemp.get(Employee.class, eId);
 	}
 
-	public Employee getAllEmp() {
+	public List<Employee> getAllEmpRepo() {
 		// TODO Auto-generated method stub
-		return null;
+		return this.htemp.loadAll(Employee.class);
 	}
 
 }

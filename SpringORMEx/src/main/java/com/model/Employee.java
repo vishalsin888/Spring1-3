@@ -1,20 +1,20 @@
 package com.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;  //JPA
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 @Entity
-@Table(name = "emp12")
+@Table(name="myemp")
 public class Employee {
 	
-	@Id // primary
+	@Id // primary key
+	@Column(name="eid")
 	private int empId;
+	@Column(name="ename")
 	private String empName;
+	@Column(name="esal")
 	private double empSal;
 	public int getEmpId() {
 		return empId;

@@ -1,11 +1,13 @@
 package com.service;
 
+import java.util.List;
+
 import com.model.Employee;
 
 public interface EmpService { 
 	 void saveEmp(Employee emp);  // abstract method
-	 Employee updateEmp(Employee emp);
+	 void updateEmp(Employee emp);
 	 Employee getEmp(Integer eId);
-	 Employee getAllEmp();
+	 List<Employee> getAllEmp();
 	
 }
