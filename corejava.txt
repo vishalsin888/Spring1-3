@@ -1,0 +1,57 @@
+core java
+//--arrays--
+--OOPS--
+-Encapsulation  // class object // data hiding 
+-Inheritance
+-- single lvl -- single parent
+-- multi lvl -- more thanm 1 parent
+-- multiple (X)
+ // is-a relation (direct relation - strong bond)  composition agregatn(indirect rel weak bond)
+-Polymorphism -- many forms // methods and constructor 
+--method overloading-- // same class // same method differnt parameter differnt order
+--method overriding--(Polymorphism) // inheritance env
+-- static Polymorphism  (overloading)
+-- run time Polymorphism (overriding)/ dynamic Polymorphism // dynamic method dispatching  LCC
+-Abstraction-
+-Abstract-
+--variables method--
+-instance (non static)
+-static
+--blocks
+-static block
+-instance block (non static)
+
+--constructor overloading--
+--constructor chaining--
+--interfaces
+--marker interface
+--final finally finalize
+--string , string buffer string builder--
+--Wrapper classes--
+--abstract--
+--Exception--
+-throw and throws
+try with resource
+--Multithreading--
+-process
+-thread
+-lifecycle of thread
+-sleep()
+-join()
+-yield()
+-wait()
+-notify()
+-synchonize
+--collections--
+-list
+-set
+-map
+-properties
+--Object class--
+--IO Streams--
+
+
+
+
+
+
